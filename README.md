@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.png" alt="NYC 311 ETL Pipeline Banner" width="100%">
+  <img src="images/banner1.png" alt="NYC 311 ETL Pipeline Banner" width="100%">
 </p>
 
 <h1 align="center">NYC 311 ETL Pipeline</h1>
