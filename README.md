@@ -185,10 +185,10 @@ nano .env
 Edit `.env` with your PostgreSQL credentials:
 
 ```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=mojabaza
-DB_USER=admin
+DB_HOST=your_host
+DB_PORT=your_port
+DB_NAME=your_db_name
+DB_USER=your_db_username
 DB_PASSWORD=your_password_here
 ```
 
@@ -418,40 +418,28 @@ SELECT * FROM etl.vw_category_borough_matrix;
 
 ## Screenshots
 
-### DBeaver - Database Navigator
-
-<p align="center">
-  <img src="images/execution_dashboard.png" alt="Execution Dashboard" width="95%">
-</p>
-
 ### Chart 1: Requests by Borough
 
 <p align="center">
-  <img src="images/chart_borough_bar.png" alt="Borough Bar Chart" width="80%">
+  <img src="images/chart_1_boroughs.png" alt="Borough Bar Chart" width="80%">
 </p>
 
 ### Chart 2: Category Distribution
 
 <p align="center">
-  <img src="images/chart_category_pie.png" alt="Category Pie Chart" width="80%">
+  <img src="images/chart_2_categories.png" alt="Category Pie Chart" width="80%">
 </p>
 
 ### Chart 3: Top 10 Complaint Types
 
 <p align="center">
-  <img src="images/chart_top10_horizontal.png" alt="Top 10 Horizontal Bar" width="85%">
+  <img src="images/chart_3_top10.png" alt="Top 10 Horizontal Bar" width="85%">
 </p>
 
 ### Chart 4: Status Distribution
 
 <p align="center">
-  <img src="images/chart_hourly_trend.png" alt="Hourly Trend" width="85%">
-</p>
-
-### Chart 5: Heatmap - Category vs Borough
-
-<p align="center">
-  <img src="images/chart_heatmap.png" alt="Heatmap" width="85%">
+  <img src="images/chart_4_status.png" alt="Hourly Trend" width="85%">
 </p>
 
 ---
