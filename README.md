@@ -32,6 +32,7 @@
   - [2. Transform](#2-transform)
   - [3. Load](#3-load)
 - [Analytics & Visualization](#analytics--visualization)
+- [Power BI Dashboard](#power-bi-dashboard)
 - [Sample Queries](#sample-queries)
 - [Screenshots](#screenshots)
 - [Troubleshooting](#troubleshooting)
@@ -404,6 +405,26 @@ SELECT * FROM etl.vw_status_distribution;
 -- Category vs Borough matrix
 SELECT * FROM etl.vw_category_borough_matrix;
 ```
+
+---
+
+### Power BI Dashboard
+
+The final stage of the project involved building an interactive dashboard to visualize the cleaned data. 
+
+### 📊 View the Full Report
+**[📄 Download the Full Power BI PDF Report](images/powerbi_report.pdf)**
+
+### Dashboard Highlights
+* **Requests by Borough:** Bar chart comparing total complaint volumes across NYC.
+* **Category Distribution:** Pie chart breaking down the main problem categories (e.g., Noise, Parking, Infrastructure).
+* **Interactive Date Slicers:** Allows users to filter all visuals by specific timeframes.
+
+<p align="center">
+  <img src="images/powerbi_dashboard.png" alt="Power BI Dashboard Screenshot" width="90%">
+</p>
+
+---
 
 ### Generated Charts
 

@@ -176,6 +176,15 @@ dim_date.to_sql('dim_date', engine, schema='etl', if_exists='append', index=Fals
 
 fact_df.to_sql('service_requests', engine, schema='etl', if_exists='append', index=False)
 
+print("\nPreparation of a table")
+
+powerbi_df = fact_df.merge(dim_borough[['borough_id', 'borough_name']], on='borough_id', how='left')
+powerbi_df = powerbi_df.merge(dim_complaint[['complaint_type_id', 'complaint_type', 'category']], on='complaint_type_id', how='left')
+powerbi_df = powerbi_df.merge(dim_date, left_on=pd.to_datetime(fact_df['created_date']).dt.date.astype(str), right_on=dim_date['full_date'].astype(str), how='left')
+
+powerbi_df.to_csv('powerbi_master_data.csv', index=False)
+print("powerbi_master_data.csv file was generated.")
+
 print("\n" + "=" * 60)
 print("VERIFICATION")
 print("=" * 60)
